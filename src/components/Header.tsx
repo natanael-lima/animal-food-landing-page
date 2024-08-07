@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import logo from '../assets/images/pet-now-without-back.png'; // Cambia esta ruta según la ubicación de tu logo
 
 export default function Header() {
