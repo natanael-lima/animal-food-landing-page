@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -22,47 +26,145 @@ a:hover {
   color: #535bf2;
 }
 
-body {
+.hero-container {
+  position: relative;
+  height: 100vh; /* Altura completa de la vista */
+  width: 100%; /* Ancho completo */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor */
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/images/background.png'); /* Ruta a tu imagen de fondo */
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  filter: blur(15px); /* Aplica el filtro de desenfoque */
+  -webkit-filter: blur(15px); /* Compatibilidad para Safari */
+  z-index: 1; /* Asegura que la imagen esté detrás del contenido */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(238, 194, 0, 0.6); /* Opcional: Añade una superposición semitransparente */
+  z-index: 2; /* Asegura que la superposición esté sobre la imagen de fondo */
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra el contenido vertical y horizontalmente */
+  text-align: center; /* Centra el texto */
+  color: white; /* Ajusta el color del texto para que sea visible sobre el fondo */
+  z-index: 3; /* Asegura que el contenido esté sobre la superposición */
+  font-size: 10em;
+}
+
+.hero-image {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-48%);
+  width: 900px; /* Tamaño de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  z-index: 2; /* Asegura que la imagen esté sobre la imagen de fondo y la superposición */
+}
+
+
+/* Carousel.css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+body {
+  background-color: #000000;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.wrapper {
+  margin-top: 0rem;
+  width: 80%;
+  max-width: 1536px;
+  margin-inline: auto;
+  height:30px;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@keyframes scrollLeft {
+  to {
+    left: -200px;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+}
+
+.itemLeft {
+  width: 100px; /* Ajusta el tamaño del contenedor */
+  height: 25px; /* Ajusta el tamaño del contenedor */
+  background-image: url('assets/images/pet-now-without-back.png'); 
+  background-size: cover; /* Asegura que la imagen cubra el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  border-radius: 6px;
+  position: absolute;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.itemLeft {
+  left: max(calc(200px * 8), 100%);
+  animation-name: scrollLeft;
+}
+
+.item1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
