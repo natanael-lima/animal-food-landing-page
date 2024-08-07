@@ -43,9 +43,8 @@ export default function Contact() {
                 required
               />
             </div>
-            <a
-                className="group relative inline-flex items-center overflow-hidden rounded-full bg-yellow-500 px-8 py-3 text-white focus:outline-none focus:ring active:bg-yellow-900 hover:bg-yellow-600"
-                href="#"
+            <button  type="submit"
+                className="group relative inline-flex items-center overflow-hidden rounded-full bg-yellow-500 px-8 py-3 text-white focus:outline-none focus:ring active:bg-yellow-900 hover:bg-yellow-600 transition focus:outline-none focus:ring focus:ring-yellow-400 w-full sm:w-auto mt-4 w-full sm:mt-0"
               >
                 <span className="absolute -end-full transition-all group-hover:end-4">
                   <svg
@@ -65,7 +64,7 @@ export default function Contact() {
                 </span>
 
                 <span className="text-sm font-medium transition-all group-hover:me-4 group-hover:text-yellow-100"> Send </span>
-              </a>
+              </button>
           </form>
         </div>
         <footer className="mt-12 text-center text-gray-600">

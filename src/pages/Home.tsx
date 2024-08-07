@@ -5,6 +5,7 @@ import About from '../components/About';
 import Contact from '../components/Contact';
 import ProductList from '../components/ProductList';
 import SliderLogos from '../components/SliderLogos';
+import SliderProduct from '../components/SliderProduct';
 
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero/>
         </section>
         {/* Otras secciones */}
+        <SliderProduct/>
         <ProductList/>
         <SliderLogos/>
         <About />
