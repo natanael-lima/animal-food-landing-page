@@ -1,4 +1,4 @@
-import React from 'react'
+//import React from 'react'
 import imageAbout from '../assets/images/dog3.png'; 
 
 export default function About() {

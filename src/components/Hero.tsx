@@ -1,4 +1,4 @@
-import React from 'react'
+//import React from 'react'
 import '../index.css'; // Asegúrate de importar el archivo CSS aquí
 import dogImage from '../assets/images/dog.png'; // Ajusta la ruta si es necesario
 

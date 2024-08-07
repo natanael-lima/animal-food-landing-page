@@ -1,8 +1,8 @@
-import React from 'react'
+//import React from 'react'
 import '../index.css'; // Asegúrate de importar el archivo CSS aquí
 
 export default function SliderLogos() {
-    const logos = [
+    /*const logos = [
         "https://w7.pngwing.com/pngs/512/231/png-transparent-pedigree-hd-logo.png",
         "https://w7.pngwing.com/pngs/512/231/png-transparent-pedigree-hd-logo.png",
         "https://w7.pngwing.com/pngs/512/231/png-transparent-pedigree-hd-logo.png",
@@ -11,7 +11,7 @@ export default function SliderLogos() {
         "https://w7.pngwing.com/pngs/512/231/png-transparent-pedigree-hd-logo.png",
         "https://w7.pngwing.com/pngs/512/231/png-transparent-pedigree-hd-logo.png",
         "https://w7.pngwing.com/pngs/512/231/png-transparent-pedigree-hd-logo.png"
-      ];
+      ];*/
     
   return (
     <div className=" p-5">

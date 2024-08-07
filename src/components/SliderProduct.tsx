@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 // Datos de ejemplo para los productos
