@@ -3,7 +3,7 @@ import imageAbout from '../assets/images/dog3.png';
 
 export default function About() {
   return (
-        <section id="about" className="py-16 bg-yellow-100 flex items-center justify-center">
+        <section id="about" className="py-16 bg-amber-100 flex items-center justify-center">
           
           <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
               <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
@@ -26,7 +26,7 @@ export default function About() {
 
                   <a
                     href="#"
-                    className="mt-8 inline-block rounded-full bg-yellow-500 px-12 py-3 text-sm font-medium text-white transition hover:text-yellow-100 hover:bg-yellow-600 focus:outline-none focus:ring focus:ring-yellow-400"
+                    className="mt-8 inline-block rounded-full bg-amber-500 px-12 py-3 text-sm font-medium text-white transition hover:text-amber-50 hover:bg-amber-600 focus:outline-none focus:ring focus:ring-yellow-400"
                   >
                     Read more
                   </a>

@@ -10,10 +10,7 @@ export default function Contact() {
     setEmail('');
   };
   return (
-    <section
-      id="contact"
-      className="bg-yellow-50 h-screen flex items-center justify-center"
-    >
+    <section id="contact" className="bg-amber-50 h-screen flex flex-col items-center justify-center">
       <div className="p-8 md:p-12 lg:px-16 lg:py-24">
         <div className="mx-auto max-w-lg text-center">
           <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
@@ -44,7 +41,7 @@ export default function Contact() {
               />
             </div>
             <button  type="submit"
-                className="group relative inline-flex items-center overflow-hidden rounded-full bg-yellow-500 px-8 py-3 text-white focus:outline-none focus:ring active:bg-yellow-900 hover:bg-yellow-600 transition focus:outline-none focus:ring focus:ring-yellow-400 w-full sm:w-auto mt-4 w-full sm:mt-0"
+                className="group relative inline-flex items-center overflow-hidden rounded-full bg-amber-500 px-8 py-3 text-white focus:outline-none focus:ring active:bg-yellow-900 hover:bg-amber-600 transition focus:outline-none focus:ring focus:ring-amber-400 w-full sm:w-auto mt-4 w-full sm:mt-0"
               >
                 <span className="absolute -end-full transition-all group-hover:end-4">
                   <svg
@@ -63,14 +60,16 @@ export default function Contact() {
                   </svg>
                 </span>
 
-                <span className="text-sm font-medium transition-all group-hover:me-4 group-hover:text-yellow-100"> Send </span>
+                <span className="text-sm font-medium transition-all group-hover:me-4 group-hover:text-amber-50"> Send </span>
               </button>
           </form>
         </div>
-        <footer className="mt-12 text-center text-gray-600">
-          <p>Copyright © PETNOW 2023.</p>
-        </footer>
+       
       </div>
+       {/* Pie de página */}
+      <footer className="mt-12 text-center text-gray-600">
+        <p>Copyright © PETNOW 2024.</p>
+      </footer>
     </section>
   );
 }

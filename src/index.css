@@ -17,14 +17,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
 
 .hero-container {
   position: relative;
@@ -60,13 +52,12 @@ a:hover {
 
 .hero-content {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Centra el contenido vertical y horizontalmente */
   text-align: center; /* Centra el texto */
   color: white; /* Ajusta el color del texto para que sea visible sobre el fondo */
   z-index: 3; /* Asegura que el contenido esté sobre la superposición */
-  font-size: 10em;
 }
 
 .hero-image {
@@ -76,7 +67,7 @@ a:hover {
   transform: translateX(-48%);
   width:730px; /* Tamaño de la imagen */
   height: auto; /* Mantiene la proporción de la imagen */
-  z-index: 2; /* Asegura que la imagen esté sobre la imagen de fondo y la superposición */
+  z-index: 4; /* Asegura que la imagen esté sobre la imagen de fondo y la superposición */
 }
 
 
