@@ -3,7 +3,7 @@ import imageAbout from '../assets/images/dog3.png';
 
 export default function About() {
   return (
-        <section id="about" className="py-16 bg-amber-100 flex items-center justify-center">
+        <section id="about" className="py-16 bg-amber-50 flex items-center justify-center">
           
           <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
               <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
@@ -16,7 +16,7 @@ export default function About() {
                 </div>
 
                 <div className="lg:py-24">
-                  <h2 className="text-3xl font-bold sm:text-4xl text-yellow-800">Grow your audience</h2>
+                  <h2 className="text-3xl font-bold sm:text-4xl text-amber-900">Grow your audience</h2>
 
                   <p className="mt-4 text-gray-600">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic atque tenetur quis

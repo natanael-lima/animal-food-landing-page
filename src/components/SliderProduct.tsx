@@ -82,7 +82,7 @@ export default function ProductList() {
     <section id="sliderproducts" className="py-16 bg-amber-50 text-center h-screen flex items-center justify-center">
     <div className="container mx-auto relative">
       <header>
-        <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">Discounted Products</h2>
+        <h2 className="text-xl font-bold text-amber-900 sm:text-3xl">Discounted Products</h2>
       </header>
 
       <div className="mt-8">
@@ -151,7 +151,7 @@ export default function ProductList() {
           <div className="absolute top-1/2 left-4 flex gap-2 transform -translate-y-1/2">
             <button
               onClick={goToPrev}
-              className={`bg-yellow-800 text-white p-3 rounded-full shadow-lg ${currentIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
+              className={`bg-amber-500 hover:bg-amber-600 text-white p-3 rounded-full shadow-lg ${currentIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
               disabled={currentIndex === 0}
             >
               &#10094;
@@ -160,7 +160,7 @@ export default function ProductList() {
           <div className="absolute top-1/2 right-4 flex gap-2 transform -translate-y-1/2">
             <button
               onClick={goToNext}
-              className={`bg-yellow-800 text-white p-3 rounded-full shadow-lg ${currentIndex >= products.length - 3 ? 'opacity-50 cursor-not-allowed' : ''}`}
+              className={`bg-amber-500 hover:bg-amber-600 text-white p-3 rounded-full shadow-lg ${currentIndex >= products.length - 3 ? 'opacity-50 cursor-not-allowed' : ''}`}
               disabled={currentIndex >= products.length - 3}
             >
               &#10095;

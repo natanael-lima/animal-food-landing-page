@@ -9,10 +9,10 @@ export default function Contact() {
     setEmail('');
   };
   return (
-    <section id="contact" className="bg-amber-50 h-screen flex flex-col items-center justify-center">
+    <section id="contact" className="bg-gray-100 h-screen flex flex-col items-center justify-center">
       <div className="p-8 md:p-12 lg:px-16 lg:py-24">
         <div className="mx-auto max-w-lg text-center">
-          <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
+          <h2 className="text-2xl font-bold text-amber-900 md:text-3xl">
            Join Our Mailing List
           </h2>
 
@@ -67,7 +67,7 @@ export default function Contact() {
       </div>
        {/* Pie de página */}
       <footer className="mt-12 text-center text-gray-600">
-        <p>Copyright © PETNOW 2024.</p>
+        <p>Copyright © PETNOW 2024 by <a href="https://www.linkedin.com/in/natanael-ever-lima-gutierrez-9bb695259/">Natanael Lima</a>.</p>
       </footer>
     </section>
   );

@@ -74,7 +74,7 @@ export default function Header() {
 
          {/* Message Button */}
          <div className="hidden lg:flex lg:items-center lg:ml-auto">
-          <button className="text-yellow-700 px-4 py-2 rounded-full hover:bg-gray-50 bg-yellow-100 font-semibold">SEND MESSAGE</button>
+          <button className="px-4 py-2 rounded-full bg-amber-50 text-amber-500 hover:bg-amber-600 hover:text-amber-50 font-semibold">SEND MESSAGE</button>
         </div>
          {/* Close Button for Mobile */}
          {menuOpen && (
