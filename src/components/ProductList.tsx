@@ -4,11 +4,11 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 export default function ProductList() {
 
   return (
-    <section id="products" className="py-16 bg-yellow-50 text-center h-auto h-screen">
+    <section id="products" className="py-16 bg-yellow-50 text-center h-auto lg:h-screen">
     
-    <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+    <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 ">
       <header>
-        <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">Pet Products Collection</h2>
+        <h2 className="text-xl font-bold text-gray-900 sm:text-3xl " >Pet Products Collection</h2>
       </header>
   
       <div className="mt-8">
